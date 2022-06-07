@@ -192,6 +192,45 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
+# Install Docker
+
+while true; do
+    echo "Docker - container runtime"
+    echo " "
+    read -p "Do you wish to install Docker?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S docker; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# Install pip
+
+while true; do
+    echo "pip - Python package manager"
+    echo " "
+    read -p "Do you wish to install pip?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S python-pip; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# Install Electron.js
+
+while true; do
+    echo "Electron.js - cross platform desktop framework"
+    echo " "
+    read -p "Do you wish to install Electron.js?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S electron; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
 # End of script
 
 echo -e "${ORANGE}Thank you $USER. You have already installed all packages for programming! ${NC}"
