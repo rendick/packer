@@ -260,8 +260,6 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-# Install 
-
 # End of script
 
 echo -e "${ORANGE}Thank you $USER. You have already installed all packages for programming! ${NC}"
