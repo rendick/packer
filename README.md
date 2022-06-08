@@ -46,15 +46,15 @@ sh Important/important_pkg.sh
 
 # Package description
 
-### **Important/important_pkg.sh** - all important packages that you need to  install on your Linux distro
+### Important/important_pkg.sh - all important packages that you need to  install on your Linux distro
 
 <br/>
 
-### **Gaming/gaming_pkg.sh** - important packages for gaming on the Linux
+### Gaming/gaming_pkg.sh - important packages for gaming on the Linux
 
 <br/>
 
-### **Programming/programming_pkg.sh** - all packages for convenient programming.
+### Programming/programming_pkg.sh - all packages for convenient programming.
 
 <br/>
 
