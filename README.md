@@ -1,10 +1,9 @@
  
  
  # Linux Package Helper for Begginers
- ## **All avilable Linux distro:** *Arch Linux*, *Manjaro Linux*
- ## **Linux distributions soon:** *Debian* 
-
-<br/>
+ **All avilable Linux distro:** *Arch Linux*, *Manjaro Linux*
+ 
+ **Linux distributions soon:** *Debian* 
 
   <a href="#installation">Installation</a>
   •
@@ -24,11 +23,8 @@
  cd LinuxPkg-Helper
  ```
 
-<br/>
-
 ### **Done.**
 
- <br/>
 
  # Install needed packages.
 
@@ -36,7 +32,7 @@
 
 <br/>
 
-## **For example**
+### **For example**
 
 ```
 sh <Folder name>/<Pakcage name>_pkg.sh 
@@ -44,7 +40,7 @@ sh <Folder name>/<Pakcage name>_pkg.sh
 sh Important/important_pkg.sh 
 ```
 
-## **P.S. You can select another packages.**
+### **P.S. You can select another packages.**
 
 <br/>
 
@@ -63,10 +59,9 @@ sh Important/important_pkg.sh
 <br/>
 
 ---
-
 <br/>
 
-## **Repository will be supplementing.**
+### **Repository will be supplementing.**
 
 
 
