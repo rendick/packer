@@ -205,6 +205,10 @@ while true; do
     esac
 done
 
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
 # Install pip
 
 while true; do
@@ -217,6 +221,10 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
 
 # Install Electron.js
 
@@ -231,6 +239,29 @@ while true; do
     esac
 done
 
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install Slack
+
+while true; do
+    echo "Slack - chat and collaboration platform"
+    echo " "
+    read -p "Do you wish to install Slack?(yes or no) " yn
+    case $yn in
+        [Yy]* ) yay -S slack-desktop ; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install 
+
 # End of script
 
 echo -e "${ORANGE}Thank you $USER. You have already installed all packages for programming! ${NC}"
@@ -239,6 +270,6 @@ while true; do
     read -p "Exit?(yes) " yn
     case $yn in
         [Yy]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+        * ) echo "Please answer yes.";;
     esac
 done
