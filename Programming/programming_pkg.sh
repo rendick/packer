@@ -56,6 +56,19 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
+# Install NeoVim
+
+while true; do
+    echo "NeoVim - text editor"
+    echo " "
+    read -p "Do you wish to install NeoVim?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S neovim; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
 # Install Spotify
 
 while true; do
@@ -259,8 +272,6 @@ done
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
-
-# Install 
 
 # End of script
 
