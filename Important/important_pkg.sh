@@ -205,4 +205,14 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-#
+# End of script
+
+echo -e "${ORANGE}Thank you $USER. You have already installed all packages for programming! ${NC}"
+
+while true; do
+    read -p "Exit?(yes) " yn
+    case $yn in
+        [Yy]* ) exit;;
+        * ) echo "Please answer yes.";;
+    esac
+done
