@@ -61,7 +61,7 @@ sh Important/important_pkg.sh
 ---
 <br/>
 
-### **Repository will be supplementing.**
+### Repository will be supplementing.
 
 
 
