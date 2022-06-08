@@ -1,6 +1,7 @@
  
  
  # Linux Package Helper for Begginers
+ 
  **All avilable Linux distro:** *Arch Linux*, *Manjaro Linux*
  
  **Linux distributions soon:** *Debian* 
@@ -11,8 +12,6 @@
   •
   <a href="#package-description">Package description</a>
 </p>
-
-<br/>
 
  # Installation
 
