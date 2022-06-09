@@ -5,9 +5,17 @@
 ORANGE='\033[0;33m'
 NC='\033[0m'
 
+# Text types
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
 # Greetings
 
-echo -e "${ORANGE}Hello $USER. We will help you with set up your Linux OS! ${NC}"
+echo -e "${ORANGE}Hello ${bold}$USER${normal}. We will help you with set up your Linux OS! ${NC}"
+echo -e "${ORANGE}Make sure that you already have installed the following packages:${NC} ${bold}Important/important_pkg.sh${normal}"
+echo -e "${ORANGE}${bold}Manjaro users, you need to ENABLE AUR in your system! Read this article:${NC}${normal} https://linuxconfig.org/how-to-install-a-package-from-aur-on-manjaro-linux"
+echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:${normal}${NC} https://youtu.be/yRADduHiM80"
 
 while true; do
     read -p "Do you want to continue?(yes or no) " yn
