@@ -26,14 +26,10 @@ while true; do
     esac
 done
 
-echo ""
-echo -e "${ORANGE}Wait...${NC}"
-echo ""
-
 # Install Visual Studio Code
 
 while true; do
-    echo "Visual Studio Code - text editor"
+    echo "Visual Studio Code - code editor"
     echo " "
     read -p "Do you wish to install Visual Studio Code?(yes or no) " yn
     case $yn in
@@ -50,7 +46,7 @@ echo ""
 # Install Sublime Text
 
 while true; do
-    echo "Sublime Text - text editor"
+    echo "Sublime Text - code editor"
     echo " "
     read -p "Do you wish to install Sublime Text?(yes or no) " yn
     case $yn in
@@ -67,7 +63,7 @@ echo ""
 # Install NeoVim
 
 while true; do
-    echo "NeoVim - text editor"
+    echo "NeoVim - code editor"
     echo " "
     read -p "Do you wish to install NeoVim?(yes or no) " yn
     case $yn in
@@ -76,6 +72,27 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install Lite XL
+
+while true; do
+    echo "Lite XL - awesome text editor"
+    echo " "
+    read -p "Do you wish to install LIte XL?(yes or no) " yn
+    case $yn in
+        [Yy]* ) yay -S lite-xl; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
 
 # Install Spotify
 
