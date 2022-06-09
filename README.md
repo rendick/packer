@@ -57,10 +57,20 @@ sh Important/important_pkg.sh
 
 <br/>
 
+# Contact me
+
+[![Telegram](https://img.shields.io/badge/-Telegram-090909?style=for-the-badge&logo=telegram&logoColor=27A0D9)](https://t.me/kostiandd)
+[![Instagram](https://img.shields.io/badge/-Instagram-090909?style=for-the-badge&logo=instagram&logoColor=B4068E)](https://www.instagram.com/nadduur/)
+[![Discord](https://img.shields.io/badge/-Discord-090909?style=for-the-badge&logo=discord&logoColor=4d92e1)](https://discord.gg/fpyBCH9969)
+[![Twitter](https://img.shields.io/badge/-Twitter-090909?style=for-the-badge&logo=Twitter&logoColor=1C9DEB)](https://twitter.com/naddurkostia)
+
 ---
-<br/>
 
 ### Repository will be supplementing.
+
+
+
+
 
 
 
