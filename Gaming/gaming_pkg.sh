@@ -43,8 +43,6 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-sleep 2
-
 # Install Steam
 
 while true; do
