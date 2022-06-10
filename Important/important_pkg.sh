@@ -13,7 +13,6 @@ normal=$(tput sgr0)
 # Greetings
 
 echo -e "${ORANGE}Hello ${bold}$USER${normal}. We will help you with set up your Linux OS! ${NC}"
-echo -e "${ORANGE}Make sure that you already have installed the following packages:${NC} ${bold}Important/important_pkg.sh${normal}"
 echo -e "${ORANGE}${bold}Manjaro users, you need to ENABLE AUR in your system! Read this article:${NC}${normal} https://linuxconfig.org/how-to-install-a-package-from-aur-on-manjaro-linux"
 echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:${normal}${NC} https://youtu.be/yRADduHiM80"
 
@@ -41,8 +40,6 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-sleep 2
-
 # Install Git
 
 while true; do
@@ -57,8 +54,6 @@ done
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
-
-sleep 2
 
 # Install Chromium
 
@@ -75,7 +70,21 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-sleep 2
+# Install Logseq
+
+while true; do
+    echo "Logseq - used to write, organize and share your thoughts, keep your to-do list, and build your own digital garden."
+    read -p "Do you wish to install Logseq?(yes or no) " yn
+    case $yn in
+        [Yy]* ) yay -S logseq; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
 
 # Install Man
 
