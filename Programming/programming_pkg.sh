@@ -43,6 +43,23 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
+# Install Hyper
+
+while true; do
+    echo "Hyper - best terminal"
+    echo " "
+    read -p "Do you wish to install Hyper?(yes or no) " yn
+    case $yn in
+        [Yy]* ) yay -S hyper; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
 # Install Sublime Text
 
 while true; do
