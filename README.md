@@ -13,14 +13,16 @@
   <a href="#package-description">Package description</a>
 </p>
 
+![Image](https://i.imgur.com/4Kh5h3u.png)
+
  # Installation
 
-***First, you need to clone repository and move to the exist folder.***
+### First way
 
- ```
- git clone https://github.com/naddurkostia/LinuxPkg-Helper.git
- cd LinuxPkg-Helper
- ```
+1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/Linux)
+2. Open terminal and and move to the folder you just downloaded and unzipped
+3. After this, you need to write `makepkg -si`
+4. Now you can run the script using the `pkg-helper` command
 
 ### **Done.**
 
@@ -31,29 +33,27 @@
 
 <br/>
 
-### **For example**
+![Image](https://i.imgur.com/Px7OjRx.png)
 
-```
-sh <Folder name>/<Pakcage name>_pkg.sh 
+# Script control
 
-sh Important/important_pkg.sh 
-```
+**🠔 🠖** - these buttons select OK or Cancel
 
-### **P.S. You can select another packages.**
+**🠕 🠗** - these buttons select packages
 
 <br/>
 
 # Package description
 
-### Important/important_pkg.sh - all important packages that you need to  install on your Linux distro
+### Important PKG - all important packages that you need to  install on your Linux distro
 
 <br/>
 
-### Gaming/gaming_pkg.sh - important packages for gaming on the Linux
+### Gaming PKG - important packages for gaming on the Linux
 
 <br/>
 
-### Programming/programming_pkg.sh - all packages for convenient programming.
+### Programming PKG - all packages for convenient programming.
 
 <br/>
 
