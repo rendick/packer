@@ -205,14 +205,14 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-# Install Standard Notes
+# Install Sublime Text
 
 while true; do
-    echo "Standard Notes - used to write notes "
+    echo "Sublime Text - code editor"
     echo " "
-    read -p "Do you wish to install Standard Notes PKG?(yes or no) " yn
+    read -p "Do you wish to install Sublime Text?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S standardnotes-desktop; break;; 
+        [Yy]* ) yay -S sublime-text-4; break;; 
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -221,6 +221,23 @@ done
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
+
+# Install Standard Notes
+
+# while true; do
+#     echo "Standard Notes - used to write notes "
+#     echo " "
+#     read -p "Do you wish to install Standard Notes PKG?(yes or no) " yn
+#     case $yn in
+#         [Yy]* ) yay -S standardnotes-desktop; break;; 
+#         [Nn]* ) exit;;
+#         * ) echo "Please answer yes or no.";;
+#     esac
+# done
+
+# echo ""
+# echo -e "${ORANGE}Wait...${NC}"
+# echo ""
 
 # End of script
 
