@@ -99,6 +99,7 @@ echo ""
 # End of script
 
 echo -e "${ORANGE}Thank you $USER. You have already installed all packages for programming! ${NC}"
+echo -e "${ORANGE}But $USER, if you want to play Steam games, so install Proton GE! Tutorial: https://github.com/GloriousEggroll/proton-ge-custom#installation  ${NC}"
 
 while true; do
     read -p "Exit?(yes) " yn
