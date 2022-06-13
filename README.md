@@ -20,7 +20,7 @@
 ### First way
 
 1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/Linux)
-2. Open terminal and and move to the folder you just downloaded and unzipped
+2. Open terminal and move to the folder you just downloaded and unzipped
 3. After this, you need to write `makepkg -si`
 4. Now you can run the script using the `pkg-helper` command
 
