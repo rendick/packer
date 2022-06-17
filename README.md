@@ -34,10 +34,15 @@
 ![Image](https://i.imgur.com/7beYHGG.png)
 
 # Script control
-
+<!-- 
 **🠔 🠖** - these buttons select OK or Cancel
 
-**🠕 🠗** - these buttons select packages
+**🠕 🠗** - these buttons select packages -->
+
+First Header  | Second Header
+------------- | -------------
+🠔 🠖  | these buttons select OK or Cancel
+🠕 🠗  | these buttons select packages
 
 <br/>
 
@@ -54,6 +59,8 @@
 ### Programming PKG - all packages for convenient programming.
 
 <br/>
+
+### Design PKG - all packages for design.
 
 # Contact me
 
