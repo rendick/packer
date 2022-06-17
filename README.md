@@ -13,13 +13,11 @@
   <a href="#package-description">Package description</a>
 </p>
 
-![Image](https://i.imgur.com/4Kh5h3u.png)
+![Image](https://i.imgur.com/htDmNaG.png)
 
  # Installation
 
-### First way
-
-1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/Linux)
+1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/PKGBUILD)
 2. Open terminal and move to the folder you just downloaded and unzipped
 3. After this, you need to write `makepkg -si`
 4. Now you can run the script using the `pkg-helper` command
@@ -33,7 +31,7 @@
 
 <br/>
 
-![Image](https://i.imgur.com/Px7OjRx.png)
+![Image](https://i.imgur.com/7beYHGG.png)
 
 # Script control
 
@@ -61,7 +59,6 @@
 
 [![Telegram](https://img.shields.io/badge/-Telegram-090909?style=for-the-badge&logo=telegram&logoColor=27A0D9)](https://t.me/kostiandd)
 [![Instagram](https://img.shields.io/badge/-Instagram-090909?style=for-the-badge&logo=instagram&logoColor=B4068E)](https://www.instagram.com/nadduur/)
-[![Discord](https://img.shields.io/badge/-Discord-090909?style=for-the-badge&logo=discord&logoColor=4d92e1)](https://discord.gg/8mzN3UFW)
 [![Twitter](https://img.shields.io/badge/-Twitter-090909?style=for-the-badge&logo=Twitter&logoColor=1C9DEB)](https://twitter.com/naddurkostia)
 
 ---
