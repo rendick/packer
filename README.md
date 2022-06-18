@@ -18,9 +18,9 @@
  # Installation
 
 1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/PKGBUILD)
-2. Open terminal and move to the folder you just downloaded and unzipped
+2. Open terminal and move to the folder you just downloaded and unzipped.
 3. After this, you need to write `makepkg -si`
-4. Now you can run the script using the `pkg-helper` command
+4. Now you can run the script using the `pkg-helper` command.
 
 ### **Done.**
 
@@ -34,10 +34,15 @@
 ![Image](https://i.imgur.com/7beYHGG.png)
 
 # Script control
-
+<!-- 
 **🠔 🠖** - these buttons select OK or Cancel
 
-**🠕 🠗** - these buttons select packages
+**🠕 🠗** - these buttons select packages -->
+
+First Header  | Second Header
+------------- | -------------
+🠔 🠖  | these buttons select OK or Cancel
+🠕 🠗  | these buttons select packages
 
 <br/>
 
@@ -54,6 +59,8 @@
 ### Programming PKG - all packages for convenient programming.
 
 <br/>
+
+### Design PKG - all packages for design.
 
 # Contact me
 
