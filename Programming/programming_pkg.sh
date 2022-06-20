@@ -94,6 +94,23 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
+# Install GitHUb Desktop
+
+while true; do
+    echo "Lite XL - awesome text editor"
+    echo " "
+    read -p "Do you wish to install LIte XL?(yes or no) " yn
+    case $yn in
+        [Yy]* ) yay -S github-desktop; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
 # Install Spotify
 
 while true; do
