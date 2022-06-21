@@ -29,11 +29,11 @@ done
 # Install Visual Studio Code
 
 while true; do
-    echo "Visual Studio Code - code editor"
+    echo "Visual Studio Code Insiders - code editor"
     echo " "
-    read -p "Do you wish to install Visual Studio Code?(yes or no) " yn
+    read -p "Do you wish to install Visual Studio Code Insiders?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S visual-studio-code-bin; break;; 
+        [Yy]* ) yay -S visual-studio-code-insiders-bin; break;; 
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
