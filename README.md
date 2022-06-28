@@ -17,10 +17,10 @@
 
  # Installation
 
-1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/PKGBUILD)
+1. You need to download release from [here](https://github.com/naddurkostia/LinuxPkg-Helper/releases/tag/BUILD)
 2. Open terminal and move to the folder you just downloaded and unzipped.
 3. After this, you need to write `makepkg -si`
-4. Now you can run the script using the `pkg-helper` command.
+4. Now you can run the script using the `LinuxPkg-Helper` command.
 
 ### **Done.**
 
@@ -61,6 +61,10 @@ First Header  | Second Header
 <br/>
 
 ### Design PKG - all packages for design.
+
+<br/>
+
+### Hacking PKG - all packages for hacking.
 
 # Contact me
 

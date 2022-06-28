@@ -29,11 +29,11 @@ done
 # Install Visual Studio Code
 
 while true; do
-    echo "Visual Studio Code - code editor"
+    echo "Visual Studio Code Insiders - code editor"
     echo " "
-    read -p "Do you wish to install Visual Studio Code?(yes or no) " yn
+    read -p "Do you wish to install Visual Studio Code Insiders?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S visual-studio-code-bin; break;; 
+        [Yy]* ) yay -S visual-studio-code-insiders-bin; break;; 
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -85,6 +85,23 @@ while true; do
     read -p "Do you wish to install LIte XL?(yes or no) " yn
     case $yn in
         [Yy]* ) yay -S lite-xl; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install GitHUb Desktop
+
+while true; do
+    echo "Lite XL - awesome text editor"
+    echo " "
+    read -p "Do you wish to install LIte XL?(yes or no) " yn
+    case $yn in
+        [Yy]* ) yay -S github-desktop; break;; 
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
