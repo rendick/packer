@@ -1,4 +1,4 @@
- #/bin/bash
+#/bin/bash
 
 # Color
 
@@ -20,9 +20,9 @@ echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:
 while true; do
     read -p "Do you want to continue?(yes or no) " yn
     case $yn in
-        [Yy]* ) echo ""; echo -e "${ORANGE}Wait...${NC}"; echo ""; sleep 2; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+        [Yy]* ) echo ""; echo -e "${ORANGE}Wait...${NC}"; echo ""; sleep 2; break;;
+        [Nn]* ) echo "Please complete above steps!"; exit;;
+        * ) echo -e "Please answer yes or no. Press y for yes or n for no. ";;
     esac
 done
 
@@ -34,7 +34,7 @@ while true; do
     read -p "Do you wish to install Blender?(yes or no) " yn
     case $yn in
         [Yy]* ) sudo pacman -S blender; break;; 
-        [Nn]* ) exit;;
+        [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
@@ -43,15 +43,33 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-# Install GIMP
+# Install GIMP & it's plugins
+
+gimp-plugins()
+{
+    echo ""
+    echo -e "${ORANGE}Wait...${NC}"
+    echo ""
+
+    while true; do
+    echo "Do you also want to instll gimp plugins"
+    echo " "
+    read -p "Do you wish to install GIMP with plugins?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S gimp gimp-plugin-gmic; break;; 
+        [Nn]* ) sudo pacman -S gimp; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+    done    
+}
 
 while true; do
     echo "GIMP - image editor"
     echo " "
     read -p "Do you wish to install GIMP?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S gimp; break;; 
-        [Nn]* ) exit;;
+        [Yy]* ) gimp-plugins; break;; 
+        [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
@@ -60,15 +78,33 @@ echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-# Install Inkscape
+# Install Inkscape with optional dependencies
+
+inkscape-dependencies()
+{
+    echo ""
+    echo -e "${ORANGE}Wait...${NC}"
+    echo ""
+
+    while true; do
+    echo "Do you also want to instll inkscape's optional dependencies"
+    echo " "
+    read -p "Do you wish to install GIMP with optional dependencies?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S inkscape; sudo pacman -S inkscape fig2dev gvfs pstoedit python-lxml python-numpy scour texlive-core; break;;
+        [Nn]* ) sudo pacman -S inkscape; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+    done
+}
 
 while true; do
     echo "Inkscape - vector graphics editor"
     echo " "
     read -p "Do you wish to install Inkscape?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S inkscape; break;; 
-        [Nn]* ) exit;;
+        [Yy]* ) inkscape-dependencies; break;;
+        [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
@@ -85,7 +121,7 @@ while true; do
     read -p "Do you wish to install Krita?(yes or no) " yn
     case $yn in
         [Yy]* ) sudo pacman -S krita; break;; 
-        [Nn]* ) exit;;
+        [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
@@ -101,17 +137,21 @@ while true; do
     echo " "
     read -p "Do you wish to install kdenlive?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S kdenlive-git; break;; 
-        [Nn]* ) exit;;
+        [Yy]* ) sudo pacman -S kdenlive; break;;
+        [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
 
 # 
 
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
 # End of script
 
-echo -e "${ORANGE}Thank you $USER. You have already installed all packages for programming! ${NC}"
+echo -e "${ORANGE}Thank you $USER. You have already installed all packages for designing! ${NC}"
 
 while true; do
     read -p "Exit?(yes) " yn
