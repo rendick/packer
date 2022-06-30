@@ -143,6 +143,101 @@ while true; do
     esac
 done
 
+# Install audacity
+
+while true; do
+    echo "audacity - audio editor"
+    echo " "
+    read -p "Do you wish to install audacity?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S audacity; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# 
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install handbrake
+
+while true; do
+    echo "handbrake - video transcoder"
+    echo " "
+    read -p "Do you wish to install handbrake?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S handbrake; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# 
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install lmms
+
+while true; do
+    echo "lmms - audio daw"
+    echo " "
+    read -p "Do you wish to install lmms?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S lmms; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# 
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install mediainfo
+
+while true; do
+    echo "mediainfo - media information"
+    echo " "
+    read -p "Do you wish to install mediainfo?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S mediainfo; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# 
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Install shotcut
+
+while true; do
+    echo "shotcut - video editor"
+    echo " "
+    read -p "Do you wish to install shotcut?(yes or no) " yn
+    case $yn in
+        [Yy]* ) sudo pacman -S shotcut; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# 
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
 # 
 
 echo ""
