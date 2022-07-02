@@ -25,20 +25,6 @@ while true; do
     esac
 done
 
-# Download YAY (AUR)
-
-while true; do
-    read -p "Do you wish to install YAY AUR?(yes or no) " yn
-    case $yn in
-        [Yy]* ) git clone https://aur.archlinux.org/yay.git; wait; cd yay; makepkg -si; cd ..; rm -rf yay; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-
-echo ""
-echo -e "${ORANGE}Wait...${NC}"
-echo ""
 
 # Install Git
 
@@ -50,6 +36,35 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
+# Check and Download YAY (AUR BIN)
+
+YAY-install()
+{
+while true; do
+    read -p "Do you wish to install YAY AUR?(yes or no) " yn
+    case $yn in
+        [Yy]* ) pacman -S --needed base-devel; git clone https://aur.archlinux.org/yay-bin.git; wait; cd yay-bin; makepkg -si; cd ..; rm -rf yay-bin; break;; 
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+}
+
+if which yay >/dev/null
+then
+    echo "YAY is installed!"
+else
+    YAY-install
+fi
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
