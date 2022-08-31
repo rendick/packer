@@ -24,9 +24,13 @@ while true; do
     echo " "
     read -p "Do you wish to install tmpmail?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S tmpmail-git; sudo pacman -S xclip; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S tmpmail-git
+        sudo pacman -S xclip
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -41,9 +45,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Tor Browser?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S tor-browser; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S tor-browser
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -58,9 +65,12 @@ while true; do
     echo " "
     read -p "Do you wish to install netdiscover?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S netdiscover; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S netdiscover
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -75,9 +85,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Wireguard?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S wireguard-dkms wireguard-tools; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S wireguard-dkms wireguard-tools
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -87,16 +100,19 @@ echo ""
 
 # Install Chomium
 
-    while true; do
-        echo "Chomium - web browser"
-        echo " "
-        read -p "Do you wish to install Chomium?(yes or no) " yn
-        case $yn in
-            [Yy]* ) sudo pacman -S chromium; break;; 
-            [Nn]* ) exit;;
-            * ) echo "Please answer yes or no.";;
-        esac
-    done
+while true; do
+    echo "Chomium - web browser"
+    echo " "
+    read -p "Do you wish to install Chomium?(yes or no) " yn
+    case $yn in
+    [Yy]*)
+        sudo pacman -S chromium
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
+    esac
+done
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
@@ -109,7 +125,7 @@ echo -e "${ORANGE}Thank you $USER. You have already installed all packages for p
 while true; do
     read -p "Exit?(yes) " yn
     case $yn in
-        [Yy]* ) exit;;
-        * ) echo "Please answer yes.";;
+    [Yy]*) exit ;;
+    *) echo "Please answer yes." ;;
     esac
 done

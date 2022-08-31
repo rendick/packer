@@ -20,9 +20,18 @@ echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:
 while true; do
     read -p "Do you want to continue?(yes or no) " yn
     case $yn in
-        [Yy]* ) echo ""; echo -e "${ORANGE}Wait...${NC}"; echo ""; sleep 2; break;;
-        [Nn]* ) echo "Please complete above steps!"; exit;;
-        * ) echo -e "Please answer yes or no. Press y for yes or n for no. ";;
+    [Yy]*)
+        echo ""
+        echo -e "${ORANGE}Wait...${NC}"
+        echo ""
+        sleep 2
+        break
+        ;;
+    [Nn]*)
+        echo "Please complete above steps!"
+        exit
+        ;;
+    *) echo -e "Please answer yes or no. Press y for yes or n for no. " ;;
     esac
 done
 
@@ -33,9 +42,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Blender?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S blender; break;; 
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S blender
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -45,22 +57,27 @@ echo ""
 
 # Install GIMP & it's plugins
 
-gimp-plugins()
-{
+gimp-plugins() {
     echo ""
     echo -e "${ORANGE}Wait...${NC}"
     echo ""
 
     while true; do
-    echo "Do you also want to instll gimp plugins"
-    echo " "
-    read -p "Do you wish to install GIMP with plugins?(yes or no) " yn
-    case $yn in
-        [Yy]* ) sudo pacman -S gimp gimp-plugin-gmic; break;; 
-        [Nn]* ) sudo pacman -S gimp; break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-    done    
+        echo "Do you also want to instll gimp plugins"
+        echo " "
+        read -p "Do you wish to install GIMP with plugins?(yes or no) " yn
+        case $yn in
+        [Yy]*)
+            sudo pacman -S gimp gimp-plugin-gmic
+            break
+            ;;
+        [Nn]*)
+            sudo pacman -S gimp
+            break
+            ;;
+        *) echo "Please answer yes or no." ;;
+        esac
+    done
 }
 
 while true; do
@@ -68,9 +85,12 @@ while true; do
     echo " "
     read -p "Do you wish to install GIMP?(yes or no) " yn
     case $yn in
-        [Yy]* ) gimp-plugins; break;; 
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        gimp-plugins
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -80,21 +100,27 @@ echo ""
 
 # Install Inkscape with optional dependencies
 
-inkscape-dependencies()
-{
+inkscape-dependencies() {
     echo ""
     echo -e "${ORANGE}Wait...${NC}"
     echo ""
 
     while true; do
-    echo "Do you also want to instll inkscape's optional dependencies"
-    echo " "
-    read -p "Do you wish to install GIMP with optional dependencies?(yes or no) " yn
-    case $yn in
-        [Yy]* ) sudo pacman -S inkscape; sudo pacman -S inkscape fig2dev gvfs pstoedit python-lxml python-numpy scour texlive-core; break;;
-        [Nn]* ) sudo pacman -S inkscape; break;;
-        * ) echo "Please answer yes or no.";;
-    esac
+        echo "Do you also want to instll inkscape's optional dependencies"
+        echo " "
+        read -p "Do you wish to install GIMP with optional dependencies?(yes or no) " yn
+        case $yn in
+        [Yy]*)
+            sudo pacman -S inkscape
+            sudo pacman -S inkscape fig2dev gvfs pstoedit python-lxml python-numpy scour texlive-core
+            break
+            ;;
+        [Nn]*)
+            sudo pacman -S inkscape
+            break
+            ;;
+        *) echo "Please answer yes or no." ;;
+        esac
     done
 }
 
@@ -103,9 +129,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Inkscape?(yes or no) " yn
     case $yn in
-        [Yy]* ) inkscape-dependencies; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        inkscape-dependencies
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -120,9 +149,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Krita?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S krita; break;; 
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S krita
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -137,9 +169,12 @@ while true; do
     echo " "
     read -p "Do you wish to install kdenlive?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S kdenlive; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S kdenlive
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -150,13 +185,16 @@ while true; do
     echo " "
     read -p "Do you wish to install audacity?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S audacity; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S audacity
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
-# 
+#
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
@@ -169,13 +207,16 @@ while true; do
     echo " "
     read -p "Do you wish to install handbrake?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S handbrake; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S handbrake
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
-# 
+#
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
@@ -188,13 +229,16 @@ while true; do
     echo " "
     read -p "Do you wish to install lmms?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S lmms; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S lmms
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
-# 
+#
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
@@ -207,13 +251,16 @@ while true; do
     echo " "
     read -p "Do you wish to install mediainfo?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S mediainfo; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S mediainfo
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
-# 
+#
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
@@ -226,19 +273,22 @@ while true; do
     echo " "
     read -p "Do you wish to install shotcut?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S shotcut; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S shotcut
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
-# 
+#
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
 echo ""
 
-# 
+#
 
 echo ""
 echo -e "${ORANGE}Wait...${NC}"
@@ -251,7 +301,7 @@ echo -e "${ORANGE}Thank you $USER. You have already installed all packages for d
 while true; do
     read -p "Exit?(yes) " yn
     case $yn in
-        [Yy]* ) exit;;
-        * ) echo "Please answer yes.";;
+    [Yy]*) exit ;;
+    *) echo "Please answer yes." ;;
     esac
 done

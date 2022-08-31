@@ -20,22 +20,31 @@ echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:
 while true; do
     read -p "Do you want to continue?(yes or no) " yn
     case $yn in
-        [Yy]* ) echo ""; echo -e "${ORANGE}Wait...${NC}"; echo ""; sleep 2; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        echo ""
+        echo -e "${ORANGE}Wait...${NC}"
+        echo ""
+        sleep 2
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
-# Install Visual Studio Code
+# Install Visual Studio Code Insiders
 
 while true; do
     echo "Visual Studio Code Insiders - code editor"
     echo " "
     read -p "Do you wish to install Visual Studio Code Insiders?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S visual-studio-code-insiders-bin; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S visual-studio-code-insiders-bin
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -50,9 +59,12 @@ while true; do
     echo " "
     read -p "Do you wish to install NeoVim?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S neovim; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S neovim
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -67,9 +79,12 @@ while true; do
     echo " "
     read -p "Do you wish to install LIte XL?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S lite-xl; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S lite-xl
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -84,9 +99,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Spotify?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S spotify; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S spotify
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -101,9 +119,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Node.js?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S nodejs; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S nodejs
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -118,9 +139,12 @@ while true; do
     echo " "
     read -p "Do you wish to install NPM?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S npm; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S npm
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -135,9 +159,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Yarn?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S yarn; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S yarn
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -152,9 +179,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Git?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S git; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S git
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -169,9 +199,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Make?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S make; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S make
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -186,9 +219,12 @@ while true; do
     echo " "
     read -p "Do you wish to install GitKraken?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S gitkraken; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S gitkraken
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -203,9 +239,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Firefox?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S firefox; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S firefox
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -220,9 +259,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Docker?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S docker; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S docker
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -237,9 +279,12 @@ while true; do
     echo " "
     read -p "Do you wish to install pip?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S python-pip; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S python-pip
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -254,9 +299,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Electron.js?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S electron; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S electron
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -271,9 +319,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Slack?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S slack-desktop ; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S slack-desktop
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -288,7 +339,7 @@ echo -e "${ORANGE}Thank you $USER. You have already installed all packages for p
 while true; do
     read -p "Exit?(yes) " yn
     case $yn in
-        [Yy]* ) exit;;
-        * ) echo "Please answer yes.";;
+    [Yy]*) exit ;;
+    *) echo "Please answer yes." ;;
     esac
 done

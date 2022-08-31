@@ -20,9 +20,15 @@ echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:
 while true; do
     read -p "Do you want to continue?(yes or no) " yn
     case $yn in
-        [Yy]* ) echo ""; echo -e "${ORANGE}Wait...${NC}"; echo ""; sleep 2; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        echo ""
+        echo -e "${ORANGE}Wait...${NC}"
+        echo ""
+        sleep 2
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -33,9 +39,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Lutris?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S lutris; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S lutris
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -50,9 +59,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Stean?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S steam; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S steam
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -67,9 +79,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Discord?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S discord; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S discord
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -86,9 +101,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Wine?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S wine winetricks; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S wine winetricks
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -104,7 +122,7 @@ echo -e "${ORANGE}But $USER, if you want to play Steam games, so install Proton 
 while true; do
     read -p "Exit?(yes) " yn
     case $yn in
-        [Yy]* ) exit;;
-        * ) echo "Please answer yes.";;
+    [Yy]*) exit ;;
+    *) echo "Please answer yes." ;;
     esac
 done

@@ -19,21 +19,29 @@ echo -e "${ORANGE}${bold}You need to connect a Multilib repository! Watch video:
 while true; do
     read -p "Do you want to continue?(yes or no) " yn
     case $yn in
-        [Yy]* ) echo ""; echo -e "${ORANGE}Wait...${NC}"; echo ""; sleep 2; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        echo ""
+        echo -e "${ORANGE}Wait...${NC}"
+        echo ""
+        sleep 2
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
-
 
 # Install Git
 
 while true; do
     read -p "Do you wish to install Git?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S git; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S git
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -43,24 +51,31 @@ echo ""
 
 # Check and Download YAY (AUR BIN)
 
-YAY-install()
-{
-while true; do
-    read -p "Do you wish to install YAY AUR?(yes or no) " yn
-    case $yn in
-        [Yy]* ) sudo pacman -S --needed base-devel; git clone https://aur.archlinux.org/yay-bin.git; wait; cd yay-bin; makepkg -si; cd ..; rm -rf yay-bin; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+YAY-install() {
+    while true; do
+        read -p "Do you wish to install YAY AUR?(yes or no) " yn
+        case $yn in
+        [Yy]*)
+            sudo pacman -S --needed base-devel
+            git clone https://aur.archlinux.org/yay-bin.git
+            wait
+            cd yay-bin
+            makepkg -si
+            cd ..
+            rm -rf yay-bin
+            break
+            ;;
+        [Nn]*) exit ;;
+        *) echo "Please answer yes or no." ;;
+        esac
+    done
 
-echo ""
-echo -e "${ORANGE}Wait...${NC}"
-echo ""
+    echo ""
+    echo -e "${ORANGE}Wait...${NC}"
+    echo ""
 }
 
-if which yay >/dev/null
-then
+if which yay >/dev/null; then
     echo "YAY is installed!"
 else
     YAY-install
@@ -75,9 +90,12 @@ echo ""
 while true; do
     read -p "Do you wish to install Chromium?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S chromium; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S chromium
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -91,9 +109,12 @@ while true; do
     echo "Logseq - used to write, organize and share your thoughts, keep your to-do list, and build your own digital garden."
     read -p "Do you wish to install Logseq?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S logseq; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S logseq
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -108,9 +129,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Man PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S man; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S man
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -125,9 +149,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Neofetch PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S neofetch; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S neofetch
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -142,9 +169,12 @@ while true; do
     echo " "
     read -p "Do you wish to install QBittorrent PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S qbittorrent; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S qbittorrent
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -159,9 +189,12 @@ while true; do
     echo " "
     read -p "Do you wish to install VLC PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S vlc; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S vlc
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -176,9 +209,12 @@ while true; do
     echo " "
     read -p "Do you wish to install GIMP PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S gimp; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S gimp
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -193,9 +229,12 @@ while true; do
     echo " "
     read -p "Do you wish to install Flameshot PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S flameshot; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S flameshot
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -210,9 +249,12 @@ while true; do
     echo " "
     read -p "Do you wish to install OBS PKG?(yes or no) " yn
     case $yn in
-        [Yy]* ) sudo pacman -S obs-studio; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        sudo pacman -S obs-studio
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -227,9 +269,12 @@ while true; do
     echo " "
     read -p "Do you wish to install NeoChat?(yes or no) " yn
     case $yn in
-        [Yy]* ) yay -S neochat-git; break;; 
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+    [Yy]*)
+        yay -S neochat-git
+        break
+        ;;
+    [Nn]*) exit ;;
+    *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -244,7 +289,7 @@ echo -e "${ORANGE}Thank you $USER. You have already installed all packages for p
 while true; do
     read -p "Exit?(yes) " yn
     case $yn in
-        [Yy]* ) exit;;
-        * ) echo "Please answer yes.";;
+    [Yy]*) exit ;;
+    *) echo "Please answer yes." ;;
     esac
 done
