@@ -62,7 +62,7 @@ YAY-install() {
             cd yay-bin
             makepkg -si
             cd ..
-            rm -rf yay-bin
+            sudo rm -rf yay-bin
             break
             ;;
         [Nn]*) exit ;;
