@@ -5,7 +5,7 @@ pkgdesc="A script for comfortable package installation."
 arch=('x86_64')
 url="https://github.com/naddurkostia/${pkgname}"
 license=('MIT')
-depends=('bash')
+depends=('bash' 'dialog')
 source=("https://github.com/naddurkostia/${pkgname}/archive/${pkgver}.tar.gz")
 md5sums=('SKIP')
 
