@@ -178,6 +178,10 @@ while true; do
     esac
 done
 
+echo ""
+echo -e "${ORANGE}Wait...${NC}"
+echo ""
+
 # Install audacity
 
 while true; do
